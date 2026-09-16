@@ -1,0 +1,1812 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:white;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 25px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links a:hover {
+    opacity: 0.5;
+}
+
+
+/* =========================
+   SCRAPBOOK INTRO
+========================= */
+
+.scrapbook {
+    min-height: 100vh;
+    position: relative;
+
+    padding: 120px 8% 70px;
+
+    overflow: hidden;
+}
+
+
+/* Main introduction */
+
+.intro-card {
+    width: 500px;
+
+    position: relative;
+    z-index: 5;
+
+    margin-left: 15%;
+    margin-top: 80px;
+}
+
+.small-title {
+    font-family: Georgia, serif;
+    font-style: italic;
+
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.intro-card h1 {
+    font-family: Georgia, serif;
+
+    font-size: 76px;
+    font-weight: normal;
+    line-height: 0.95;
+
+    margin-bottom: 25px;
+}
+
+.intro-card h1 span {
+    font-style: italic;
+}
+
+.title-label {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border: 1px solid #302d2d;
+    border-radius: 20px;
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    width: 380px;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+.explore-button {
+    text-decoration: none;
+
+    font-size: 14px;
+
+    border-bottom: 1px solid #302d2d;
+
+    padding-bottom: 4px;
+}
+
+
+/* =========================
+   SCRAPBOOK ELEMENTS
+========================= */
+
+.sticky-note {
+    position: absolute;
+
+    padding: 18px 22px;
+
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.08);
+
+    font-size: 13px;
+}
+
+.note-one {
+    top: 22%;
+    left: 7%;
+
+    background: #f3dce4;
+    transform: rotate(-5deg);
+}
+
+.note-one p {
+    font-family: cursive;
+    font-size: 22px;
+}
+
+.note-one span {
+    font-size: 11px;
+}
+
+.music-widget {
+    position: absolute;
+
+    top: 18%;
+    right: 9%;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 18px;
+
+    background: white;
+    border: 1px solid #e4e0db;
+
+    box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.06);
+
+    transform: rotate(3deg);
+}
+
+.music-icon {
+    font-size: 25px;
+}
+
+.music-widget p {
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.music-widget strong {
+    font-size: 12px;
+}
+
+
+/* Polaroids */
+
+.polaroid {
+    position: absolute;
+
+    background: white;
+
+    padding: 12px 12px 25px;
+
+    box-shadow: 4px 6px 18px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+.polaroid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.polaroid p {
+    font-family: cursive;
+    font-size: 13px;
+
+    margin-top: 10px;
+}
+
+.polaroid-one {
+    top: 20%;
+    right: 22%;
+
+    transform: rotate(6deg);
+}
+
+.polaroid-two {
+    right: 7%;
+    bottom: 16%;
+
+    transform: rotate(-6deg);
+}
+
+
+/* Fun facts */
+
+.fun-facts {
+    right: 5%;
+    bottom: 8%;
+
+    background: #dce9d2;
+
+    transform: rotate(4deg);
+}
+
+.fun-facts h3,
+.interests h3 {
+    font-family: Georgia, serif;
+    margin-bottom: 12px;
+}
+
+.fun-facts p,
+.interests p {
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+
+/* Currently */
+
+.interests {
+    left: 5%;
+    bottom: 8%;
+
+    background: #ead6df;
+
+    transform: rotate(-4deg);
+}
+
+
+/* Flowers */
+
+.flower {
+    position: absolute;
+
+    font-size: 45px;
+}
+
+.flower-one {
+    top: 28%;
+    left: 3%;
+}
+
+.flower-two {
+    top: 38%;
+    right: 3%;
+}
+
+
+/* =========================
+   WORK SECTION
+========================= */
+
+.work-section {
+    width: 86%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 70px 0 120px;
+}
+
+
+/* Heading */
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading p {
+    font-family: Georgia, serif;
+    font-style: italic;
+
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+
+    font-size: 45px;
+    font-weight: normal;
+}
+
+
+/* =========================
+   DESIGN / RESEARCH BUTTONS
+========================= */
+
+.work-toggle {
+    display: flex;
+    gap: 8px;
+
+    margin-bottom: 65px;
+}
+
+.toggle-button {
+    padding: 8px 18px;
+
+    border: 1px solid #302d2d;
+    border-radius: 30px;
+
+    background: transparent;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.toggle-button.active {
+    background: #302d2d;
+    color: white;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    width: 100%;
+}
+
+
+/*
+   ALL PROJECTS USE THIS
+   SAME STYLE
+*/
+
+.portfolio-project {
+    display: grid;
+
+    grid-template-columns: 55% 40%;
+    gap: 5%;
+    
+
+    align-items: center;
+
+    margin-bottom: 40px;
+
+    opacity: 0;
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+
+/* Scroll animation */
+
+.portfolio-project.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================
+   PROJECT IMAGE
+========================= */
+
+.project-image-area img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+    display: block;
+    border-radius: 6%;
+    
+}
+
+.project-image-placeholder {
+    width: 85%;
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+
+    font-family: Georgia, serif;
+    font-size: 22px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.project-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    display: block;
+}
+
+/* =========================
+   PROJECT INFORMATION
+========================= */
+
+.project-content {
+    max-width: 390px;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    margin-bottom: 15px;
+}
+
+.project-meta span {
+    padding: 5px 8px;
+
+    border: 1px solid #555;
+    border-radius: 20px;
+
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.project-content h3 {
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+    font-weight: normal;
+
+    line-height: 1.1;
+
+    margin-bottom: 14px;
+}
+
+.project-content p {
+    font-size: 14px;
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.view-project {
+    font-size: 13px;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #302d2d;
+
+    padding-bottom: 3px;
+}
+
+
+
+
+/* =========================
+   HIDDEN PROJECTS
+========================= */
+
+.hidden {
+    display: none;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+
+    .scrapbook {
+        padding: 110px 25px 70px;
+    }
+
+    .intro-card {
+        width: 100%;
+        margin: 80px 0 0;
+    }
+
+    .intro-card h1 {
+        font-size: 55px;
+    }
+
+    .intro-text {
+        width: 100%;
+    }
+
+
+    .music-widget,
+    .note-one,
+    .fun-facts,
+    .interests,
+    .polaroid,
+    .flower {
+        display: none;
+    }
+
+
+    .work-section {
+        width: 90%;
+        padding-top: 50px;
+    }
+
+    .section-heading h2 {
+        font-size: 38px;
+    }
+
+
+    .portfolio-project {
+        grid-template-columns: 1fr;
+        gap: 25px;
+
+        margin-bottom: 80px;
+    }
+
+    .project-image-area {
+        height: 280px;
+    }
+
+    .project-content {
+        max-width: 100%;
+    }
+
+    .project-content h3 {
+        font-size: 29px;
+    }
+
+}
+
+/* =====================================================
+   MOUX CASE STUDY
+   ===================================================== */
+
+/* ---------- Case Study ---------- */
+
+.case-study {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 35px 80px;
+}
+
+/* ---------- Hero ---------- */
+
+.case-study-hero-image {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.case-study-hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------- Project Header ---------- */
+
+.case-study-header {
+    padding: 0 0 50px;
+}
+
+.project-label {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.case-study-header h1 {
+    font-size: clamp(42px, 4vw, 62px);
+    line-height: 1.05;
+    font-weight: 500;
+    margin: 0 0 18px;
+    max-width: 750px;
+}
+
+.project-subtitle {
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0;
+}
+
+/* ---------- Images ---------- */
+
+.case-study-hero-image,
+.research-image,
+.persona-image,
+.workflow-image {
+    background: #f3f1ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.case-study-hero-image {
+    width: 100%;
+    min-height: 550px;
+    margin-top: 40px;
+}
+
+.case-study-hero-image img,
+.research-image img,
+.persona-image img,
+.workflow-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------- Sections ---------- */
+
+.case-study-section {
+    padding: 120px 0;
+    border-top: 1px solid #ddd;
+}
+
+.case-study-section > h2 {
+    font-size: 48px;
+    font-weight: 500;
+    margin: 10px 0 50px;
+}
+
+.section-number {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.case-study-section h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 18px;
+}
+
+.case-study-section p {
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 750px;
+}
+
+/* ---------- Tags / Bubbles ---------- */
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0 45px;
+}
+
+.project-tags span {
+    border: 1px solid #222;
+    border-radius: 100px;
+    padding: 9px 16px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* ---------- Project Details ---------- */
+
+.project-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    margin-top: 70px;
+    padding-top: 40px;
+    border-top: 1px solid #ddd;
+}
+
+.project-details h3 {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.project-details p {
+    font-size: 15px;
+    margin: 0;
+}
+
+/* ---------- Problem Statement ---------- */
+
+.problem-statement {
+    margin: 70px 0;
+    padding: 45px;
+    background: #f6f3f0;
+}
+
+.problem-statement p {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 20px;
+}
+
+.problem-statement h3 {
+    font-size: 27px;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 850px;
+}
+
+/* ---------- Lists ---------- */
+
+.case-study-section ul {
+    max-width: 700px;
+    padding-left: 22px;
+}
+
+.case-study-section li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* ---------- Research Stats ---------- */
+
+.research-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 70px 0;
+}
+
+.research-stats div {
+    padding: 35px 20px;
+}
+
+.research-stats strong {
+    display: block;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.research-stats span {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ---------- Research Subsections ---------- */
+
+.research-subsection {
+    margin-top: 100px;
+}
+
+.research-subsection h3 {
+    margin-top: 0;
+}
+
+.research-image {
+    width: 120%;
+    min-height: 400px;
+    margin: 40px 0 70px;
+}
+
+.research-image.large {
+   .research-image.large {
+    width: 100%;
+    height: auto;
+}
+}
+
+.research-image p,
+.persona-image p,
+.workflow-image p {
+    color: #777;
+    font-size: 13px;
+}
+
+/* ---------- Findings ---------- */
+
+.research-findings {
+    margin-top: 100px;
+}
+
+.finding {
+    border-top: 1px solid #ddd;
+    padding: 25px 0;
+}
+
+.finding h4 {
+    font-size: 19px;
+    margin: 0 0 8px;
+}
+
+.finding p {
+    margin: 0;
+}
+
+/* ---------- Personas ---------- */
+
+.personas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 110px;
+    margin-top: 60px;
+}
+.persona-image {
+    width: 150%;
+    margin-bottom: 18px;
+    background: #f3f1ee;
+    overflow: hidden;
+}
+
+.persona-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.persona h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.persona p {
+    font-size: 15px;
+}
+
+ 
+
+/* ---------- Final Designs ---------- */
+
+.workflow {
+    padding: 100px 0;
+    border-top: 1px solid #ddd;
+}
+
+.workflow-label {
+    font-size: 12px !important;
+    letter-spacing: 2px;
+   
+    margin-bottom: 10px !important;
+}
+
+.workflow h3 {
+    font-size: 32px;
+    margin: 0 0 40px;
+}
+
+.workflow-image {
+    min-height: 600px;
+    margin-bottom: 50px;
+}
+
+.workflow h4 {
+    font-size: 13px;
+    
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.design-focus {
+    margin-top: 40px;
+    font-size: 13px !important;
+   
+    letter-spacing: 1px;
+}
+
+.design-change {
+    margin-bottom: 30px;
+}
+
+/* ---------- Reflection ---------- */
+.reflection h2 {
+    margin-bottom: 10px;
+}
+
+.reflection p {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+}
+
+.reflection .poster-image {
+    width: 100%;
+    margin: 0 0 20px;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .case-study {
+        padding: 60px 20px;
+    }
+
+    .case-study-header {
+        padding: 30px 0 70px;
+    }
+
+    .case-study-header h1 {
+        font-size: 48px;
+    }
+
+    .case-study-section {
+        padding: 80px 0;
+    }
+
+    .case-study-section > h2 {
+        font-size: 38px;
+    }
+
+    .project-details {
+        grid-template-columns: 1fr;
+    }
+
+    .research-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .personas {
+        grid-template-columns: 1fr;
+    }
+
+    .insight-design {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+
+    .workflow-image {
+        min-height: 350px;
+    }
+
+}
+
+/* =====================================================
+   BEFORE / AFTER
+   ===================================================== */
+
+.before-after {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.before-after-item {
+    min-width: 0;
+}
+
+.image-label {
+    font-size: 12px !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0 0 12px !important;
+}
+
+.before-after .workflow-image {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin-bottom: 0;
+    background: #f3f1ee;
+    overflow: hidden;
+}
+
+.before-after .workflow-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.design-focus {
+    margin-top: 35px;
+}
+
+.design-focus strong {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-bottom: 12px;
+}
+
+.design-focus p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 750px;
+}
+
+/* ---------- Cleaner Case Study Spacing ---------- */
+
+.case-study {
+    padding-top: 60px;
+}
+
+.case-study-header {
+    padding: 35px 0 70px;
+}
+
+.case-study-section {
+    padding: 75px 0;
+}
+
+.case-study-section > h2 {
+    margin-top: 5px;
+    margin-bottom: 35px;
+}
+
+.research-subsection {
+    margin-top: 65px;
+}
+
+.workflow {
+    padding: 70px 0;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 700px) {
+
+    .before-after {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .case-study {
+        padding-top: 40px;
+    }
+
+    .case-study-header {
+        padding: 25px 0 55px;
+    }
+
+    .case-study-section {
+        padding: 60px 0;
+    }
+
+}
+
+
+.poster-image {
+    width: 100%;
+    margin: 40px 0 0;
+}
+
+.poster-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =====================================================
+   STELLANTIS IVI CASE STUDY
+   Uses the same visual system as MOUX
+   ===================================================== */
+
+
+/* ---------- Project Information ---------- */
+
+.project-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin-top: 30px;
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-info p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.info-label {
+    font-size: 11px !important;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px !important;
+}
+
+
+/* ---------- Figma Presentation ---------- */
+
+.presentation-embed {
+    width: 110%;
+    margin-left: -5%;
+    margin-top: 40px;
+    background: #f3f1ee;
+    overflow: hidden;
+}
+
+.presentation-embed iframe {
+    width: 100%;
+    height: 700px;
+    border: 0;
+    display: block;
+}
+
+/* ---------- Findings ---------- */
+
+.finding {
+    border-top: 1px solid #ddd;
+    padding: 25px 0;
+}
+
+.finding:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.finding h4 {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0 0 8px;
+}
+
+.finding p {
+    margin: 0;
+}
+
+
+/* ---------- Early Sketches ---------- */
+
+.sketch-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 40px 0 60px;
+}
+
+.sketch-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+.research-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.research-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ---------- Final Design Sections ---------- */
+
+.design-project {
+    padding: 70px 0;
+    border-top: 1px solid #ddd;
+}
+
+.design-project:first-child {
+    padding-top: 10px;
+    border-top: none;
+}
+
+.project-number {
+    font-size: 12px !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 12px !important;
+}
+
+.design-project h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 0 18px;
+}
+
+.design-description {
+    max-width: 700px;
+    margin-bottom: 35px;
+}
+
+.design-project h4 {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 35px 0 15px;
+}
+
+
+/* ---------- Carousel ---------- */
+
+.design-carousel {
+    position: relative;
+    width: 100%;
+    margin: 45px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-image {
+    width: 85%;
+    background: #f3f1ee;
+    overflow: hidden;
+}
+
+.carousel-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ---------- Carousel Arrows ---------- */
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid #ddd;
+    border-radius: 50%;
+
+    background: white;
+
+    font-size: 18px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+}
+
+.carousel-prev {
+    left: 2%;
+}
+
+.carousel-next {
+    right: 2%;
+}
+
+.carousel-arrow:hover {
+    background: #f3f1ee;
+}
+
+
+/* ---------- Carousel Information ---------- */
+
+.carousel-info {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.carousel-info span {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.carousel-info p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    max-width: 600px !important;
+    margin: 8px auto 0 !important;
+}
+
+
+/* ---------- Final Experience ---------- */
+
+.final-design-image {
+    width: 100%;
+    margin: 40px 0 0;
+    background: #f3f1ee;
+    overflow: hidden;
+}
+
+.final-design-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 700px) {
+
+    .project-info {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .presentation-embed iframe {
+        height: 500px;
+    }
+
+    .sketch-gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .design-project {
+        padding: 60px 0;
+    }
+
+    .design-project h3 {
+        font-size: 28px;
+    }
+
+    .carousel-image {
+        width: 88%;
+    }
+
+    .carousel-arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .carousel-prev {
+        left: 0;
+    }
+
+    .carousel-next {
+        right: 0;
+    }
+}
+
+/* =========================================
+   FINAL INTERFACE CAROUSELS
+   ========================================= */
+
+ 
+
+
+.final-experience-card {
+    width: 100%;
+}
+
+.final-experience-card h3 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.final-experience-card .design-carousel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.final-experience-card .carousel-image {
+    flex: 1;
+}
+
+.final-experience-card .carousel-image img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+    display: block;
+}
+/* ---------- Contact Page ---------- */
+
+.contact-page {
+    max-width: 900px;
+    margin: 120px auto;
+    padding: 0 40px;
+}
+
+.contact-page h1 {
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+.contact-page p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 6px 0;
+}
+
+.contact-page p:nth-of-type(4) {
+    margin-bottom: 55px;
+}
+
+.contact-page a {
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px solid #222;
+    transition: opacity 0.2s ease;
+}
+
+.contact-page a:hover {
+    opacity: 0.5;
+}
+
+/* ---------- Contact Hero ---------- */
+
+.contact-hero {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contact-hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.contact-page {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.88);
+    border: 2px solid #222;
+    box-shadow: 8px 8px 0 #222;
+}
+
+.contact-page h1 {
+    font-size: 56px;
+    margin-bottom: 40px;
+    letter-spacing: -2px;
+}
+
+.contact-page p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-page a {
+    color: #222;
+    text-decoration: none;
+    border-bottom: 2px solid #222;
+}
+
+.contact-page a:hover {
+    background: #222;
+    color: white;
+}
+
+/* ---------- MaizeTix Case Study ---------- */
+
+.case-study {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.case-hero {
+    padding: 70px 0 100px;
+}
+
+.case-hero-image {
+    width: 100%;
+    margin-bottom: 55px;
+}
+
+.case-hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-label,
+.section-label {
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.case-hero h1 {
+    font-size: 64px;
+    font-weight: 500;
+    margin: 18px 0;
+}
+
+.case-hero-description {
+    max-width: 650px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.case-section {
+    padding: 100px 0;
+    border-top: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 40px;
+}
+
+.section-content {
+    max-width: 900px;
+}
+
+.section-content h2 {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 30px;
+}
+
+.section-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 750px;
+}
+
+.project-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    margin-top: 60px;
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+}
+
+.project-details span {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.project-details p {
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+.case-image {
+    margin-top: 50px;
+}
+
+.case-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.insight-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.insight-card {
+    padding: 30px;
+    background: #f4f2ef;
+}
+
+.insight-card h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.insight-card p {
+    font-size: 15px;
+}
+
+.competitive-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.competitive-grid .case-image {
+    margin-top: 30px;
+}
+
+.swot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.swot-card {
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+
+.swot-card h3 {
+    margin-top: 0;
+}
+
+.swot-card p {
+    font-size: 15px;
+}
+
+.process-flow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0;
+}
+
+.process-flow div {
+    text-align: center;
+}
+
+.process-flow span {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.process-flow p {
+    margin: 8px 0 0;
+    font-size: 14px;
+}
+
+.user-flow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 60px 0;
+    padding: 30px;
+    background: #f4f2ef;
+}
+
+.user-flow div {
+    font-size: 14px;
+    text-align: center;
+}
+
+.user-flow span {
+    font-size: 20px;
+}
+
+.design-frame {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 50px;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.design-frame-text span {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+}
+
+.design-frame-text h3 {
+    font-size: 27px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.design-frame-text p {
+    font-size: 15px;
+}
+
+.design-frame-image img {
+    width: 100%;
+    display: block;
+}
+
+.final-design {
+    margin-top: 80px;
+}
+
+.final-design h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.final-design img {
+    width: 100%;
+    display: block;
+}
+
+.reflection {
+    margin-bottom: 100px;
+}
+
+.reflection ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+@media (max-width: 800px) {
+
+    .case-section {
+        grid-template-columns: 1fr;
+        padding: 70px 0;
+    }
+
+    .case-hero h1 {
+        font-size: 48px;
+    }
+
+    .project-details,
+    .insight-grid,
+    .competitive-grid,
+    .swot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-flow {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .user-flow {
+        flex-direction: column;
+    }
+
+    .design-frame {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+}
