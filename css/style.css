@@ -1535,21 +1535,22 @@ a {
     color: white;
 }
 
-/* ---------- MaizeTix Case Study ---------- */
+/* =====================================================
+   MAIZETIX CASE STUDY
+   ===================================================== */
 
 .case-study {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
+    padding: 50px 0 100px;
 }
 
-.case-hero {
-    padding: 70px 0 100px;
-}
+/* ---------- Hero ---------- */
 
 .case-hero-image {
     width: 100%;
-    margin-bottom: 55px;
+    margin: 40px 0 100px;
 }
 
 .case-hero-image img {
@@ -1558,85 +1559,131 @@ a {
     display: block;
 }
 
-.project-label,
-.section-label {
-    font-size: 12px;
-    letter-spacing: 1.8px;
-    text-transform: uppercase;
+.case-hero {
+    width: 100%;
+    margin: 0 0 130px;
+    text-align: left;
+}
+
+.case-hero .section-label {
+    margin-bottom: 25px;
 }
 
 .case-hero h1 {
-    font-size: 64px;
+    font-size: 72px;
     font-weight: 500;
-    margin: 18px 0;
+    line-height: 1.05;
+    letter-spacing: -3px;
+    margin: 0 0 30px;
 }
 
-.case-hero-description {
-    max-width: 650px;
+.case-hero-intro {
+    max-width: 720px;
     font-size: 20px;
-    line-height: 1.6;
+    line-height: 1.65;
+    margin: 0;
 }
+
+/* ---------- Sections ---------- */
 
 .case-section {
-    padding: 100px 0;
-    border-top: 1px solid #ddd;
-    display: grid;
-    grid-template-columns: 25% 75%;
-    gap: 40px;
+    width: 100%;
+    margin: 0 0 140px;
+    padding: 0;
+}
+
+.section-label {
+    font-size: 11px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .section-content {
-    max-width: 900px;
+    width: 100%;
 }
 
 .section-content h2 {
-    font-size: 38px;
+    max-width: 760px;
+    font-size: 40px;
     font-weight: 500;
     line-height: 1.2;
+    letter-spacing: -1px;
     margin: 0 0 30px;
 }
 
 .section-content p {
+    max-width: 720px;
     font-size: 17px;
-    line-height: 1.7;
-    max-width: 750px;
+    line-height: 1.75;
+    margin: 0 0 24px;
 }
+
+/* ---------- Project Details ---------- */
 
 .project-details {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 35px;
-    margin-top: 60px;
-    border-top: 1px solid #ddd;
+    margin-top: 65px;
     padding-top: 30px;
+    border-top: 1px solid #ddd;
+}
+
+.project-details > div {
+    margin: 0;
 }
 
 .project-details span {
-    font-size: 11px;
+    display: block;
+    font-size: 10px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .project-details p {
-    margin-top: 8px;
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
 }
 
-.case-image {
-    margin-top: 50px;
+/* ---------- Images ---------- */
+
+.research-image {
+    width: 100%;
+    margin: 55px 0 0;
 }
 
-.case-image img {
+.research-image img {
     width: 100%;
     height: auto;
     display: block;
 }
 
+/* ---------- Current Experience ---------- */
+
+.current-experience-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 115%;
+    margin: 40px 0;
+}
+
+.current-experience-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------- Insight Cards ---------- */
+
 .insight-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
-    margin-top: 40px;
+    margin-top: 55px;
 }
 
 .insight-card {
@@ -1644,169 +1691,291 @@ a {
     background: #f4f2ef;
 }
 
+.insight-card span {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
 .insight-card h3 {
-    font-size: 18px;
-    margin-top: 0;
+    font-size: 19px;
+    font-weight: 500;
+    margin: 15px 0 10px;
 }
 
 .insight-card p {
     font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
 }
+
+/* ---------- Competitive Analysis ---------- */
 
 .competitive-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    gap: 30px;
+    margin-top: 55px;
 }
 
-.competitive-grid .case-image {
-    margin-top: 30px;
+.competitive-grid .research-image {
+    margin: 0;
 }
 
-.swot-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.swot-card {
-    padding: 30px;
-    border: 1px solid #ddd;
-}
-
-.swot-card h3 {
-    margin-top: 0;
-}
-
-.swot-card p {
-    font-size: 15px;
-}
+/* ---------- Process ---------- */
 
 .process-flow {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
     margin-top: 60px;
+    padding: 30px 0;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    padding: 30px 0;
 }
 
-.process-flow div {
+.process-step {
     text-align: center;
 }
 
-.process-flow span {
-    font-size: 12px;
+.process-step span {
+    font-size: 11px;
     letter-spacing: 1px;
 }
 
-.process-flow p {
-    margin: 8px 0 0;
-    font-size: 14px;
+.process-step h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0 0;
 }
+
+.process-arrow {
+    font-size: 18px;
+}
+
+/* ---------- User Flow ---------- */
 
 .user-flow {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 15px;
-    margin: 60px 0;
+    margin: 55px 0;
     padding: 30px;
     background: #f4f2ef;
 }
 
-.user-flow div {
+.user-flow-step {
     font-size: 14px;
     text-align: center;
 }
 
-.user-flow span {
-    font-size: 20px;
+.user-flow-arrow {
+    font-size: 18px;
 }
+
+/* ---------- User Flow Image ---------- */
+
+.workflow-image {
+    width: 65%;
+    margin: 30px auto;
+}
+
+.workflow-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------- Components Image ---------- */
+
+.components-image {
+    width: 65%;
+    margin: 30px auto;
+}
+
+.components-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 18px;
+}
+
+/* ---------- Design Frames ---------- */
 
 .design-frame {
     display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 50px;
+    grid-template-columns: 32% 68%;
+    gap: 55px;
     align-items: center;
-    margin: 100px 0;
+    margin: 80px 0;
 }
 
-.design-frame-text span {
-    font-size: 11px;
-    letter-spacing: 1.5px;
+.design-frame.reverse {
+    grid-template-columns: 68% 32%;
 }
 
-.design-frame-text h3 {
-    font-size: 27px;
+.design-frame.reverse .design-frame-text {
+    order: 2;
+}
+
+.design-frame.reverse .design-frame-image {
+    order: 1;
+}
+
+.design-frame-text h2 {
+    font-size: 32px;
     font-weight: 500;
-    margin: 15px 0;
+    line-height: 1.2;
+    margin: 0 0 20px;
 }
 
 .design-frame-text p {
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
 }
 
 .design-frame-image img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
-.final-design {
-    margin-top: 80px;
+/* ---------- Final Experience ---------- */
+
+.final-experience-card {
+    width: 100%;
+    margin-top: 70px;
 }
 
-.final-design h3 {
-    font-size: 24px;
+.final-experience-card h3 {
+    font-size: 13px;
     font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
     margin-bottom: 25px;
 }
 
-.final-design img {
+.final-screens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     width: 100%;
-    display: block;
+    align-items: start;
 }
 
+.final-screens img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 22px;
+}
+
+/* ---------- Reflection ---------- */
+
 .reflection {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+}
+
+.reflection h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 55px;
+    margin-bottom: 20px;
 }
 
 .reflection ul {
+    max-width: 720px;
     padding-left: 20px;
     line-height: 1.8;
 }
 
-@media (max-width: 800px) {
+/* ---------- Mobile ---------- */
 
-    .case-section {
-        grid-template-columns: 1fr;
-        padding: 70px 0;
+@media (max-width: 700px) {
+
+    .case-study {
+        width: 88%;
+        padding: 35px 0 70px;
+    }
+
+    .case-hero-image {
+        margin: 25px 0 70px;
+    }
+
+    .case-hero {
+        margin-bottom: 90px;
     }
 
     .case-hero h1 {
-        font-size: 48px;
+        font-size: 52px;
+        letter-spacing: -2px;
+        margin-bottom: 25px;
     }
 
-    .project-details,
+    .case-hero-intro {
+        font-size: 18px;
+    }
+
+    .case-section {
+        margin-bottom: 100px;
+    }
+
+    .section-content h2 {
+        font-size: 32px;
+    }
+
+    .project-details {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+    }
+
     .insight-grid,
-    .competitive-grid,
-    .swot-grid {
+    .competitive-grid {
         grid-template-columns: 1fr;
     }
 
-    .process-flow {
-        flex-direction: column;
-        gap: 20px;
-    }
-
+    .process-flow,
     .user-flow {
         flex-direction: column;
     }
 
-    .design-frame {
+    .current-experience-images {
         grid-template-columns: 1fr;
-        gap: 30px;
+        width: 100%;
     }
 
+    .workflow-image,
+    .components-image {
+        width: 100%;
+    }
+
+    .design-frame,
+    .design-frame.reverse {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .design-frame.reverse .design-frame-text,
+    .design-frame.reverse .design-frame-image {
+        order: initial;
+    }
+
+    .final-screens {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+.swot-image {
+    width: 70%;
+    margin: 40px auto 0;
+}
+
+.swot-image img {
+    width: 100%;
+    height: auto;
+    display: block;
 }

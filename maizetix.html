@@ -12,7 +12,7 @@
 
 <body>
 
-    <!-- Navigation -->
+    <!-- NAVIGATION -->
 
     <nav class="navbar">
 
@@ -21,10 +21,23 @@
         </div>
 
         <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="index.html#work">Work</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#work">
+                Work
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contactpage.html">
+                Contact
+            </a>
+
         </div>
 
     </nav>
@@ -33,31 +46,33 @@
     <main class="case-study">
 
 
-        <!-- HERO -->
+        <!-- HERO IMAGE -->
+
+        <section class="case-hero-image">
+
+            <img
+                src="images/maizetixcv.png"
+                alt="MaizeTix mobile app screens showing University of Michigan athletic events"
+            >
+
+        </section>
+
+
+        <!-- INTRO -->
 
         <section class="case-hero">
 
-            <div class="case-hero-image">
-                <img src="images/maizetix-cover.png" alt="MaizeTix redesign">
+            <div class="section-label">
+                UX/UI DESIGN · TICKETING
             </div>
 
-            <div class="case-hero-content">
+            <h1>
+                MaizeTix
+            </h1>
 
-                <p class="project-label">
-                    UX/UI DESIGN · TICKETING
-                </p>
-
-                <h1>
-                    MaizeTix
-                </h1>
-
-                <p class="case-hero-description">
-                    Redesigning the University of Michigan's student ticketing
-                    experience to make finding and purchasing tickets clearer,
-                    faster, and easier to navigate.
-                </p>
-
-            </div>
+            <p class="case-hero-intro">
+                Redesigning the University of Michigan's student ticketing experience to create a clearer path from browsing games to finding available tickets.
+            </p>
 
         </section>
 
@@ -73,40 +88,40 @@
             <div class="section-content">
 
                 <h2>
-                    Designing a clearer way to find student tickets.
+                    Redesigning a platform built around U-M sports.
                 </h2>
 
                 <p>
-                    MaizeTix is a University of Michigan ticketing platform
-                    that allows students to buy and resell tickets for
-                    athletic events.
+                    MaizeTix is a University of Michigan student ticketing platform that connects students buying and reselling tickets for athletic events. The platform is centered around the student experience of attending U-M sporting events, including football, basketball, hockey, and baseball.
                 </p>
 
                 <p>
-                    Our project focused on improving the general admissions
-                    experience by creating a clearer, more intuitive path
-                    from browsing games to finding available tickets.
+                    Building on the existing MaizeTix platform, our project focused on redesigning the general admission experience while maintaining the established brand and design patterns.
+                </p>
+
+                <p>
+                    We explored how the experience could better organize game discovery, ticket information, and availability while translating the existing website experience into a mobile format.
                 </p>
 
                 <div class="project-details">
 
                     <div>
-                        <span>Client</span>
+                        <span>CLIENT</span>
                         <p>MaizeTix</p>
                     </div>
 
                     <div>
-                        <span>Role</span>
+                        <span>ROLE</span>
                         <p>UX/UI Designer</p>
                     </div>
 
                     <div>
-                        <span>Tools</span>
+                        <span>TOOLS</span>
                         <p>Figma · FigJam</p>
                     </div>
 
                     <div>
-                        <span>Focus</span>
+                        <span>FOCUS</span>
                         <p>User Flow · UI Design · Interaction Design</p>
                     </div>
 
@@ -128,49 +143,44 @@
             <div class="section-content">
 
                 <h2>
-                    Where the existing experience falls short.
+                    Identifying opportunities within the existing experience.
                 </h2>
 
                 <p>
-                    Since this was an extension of an existing platform,
-                    we worked within MaizeTix's established visual identity
-                    rather than creating an entirely new brand.
+                    Since this was an extension of an existing platform, we worked within MaizeTix's established visual identity rather than creating an entirely new brand.
                 </p>
 
                 <p>
-                    We analyzed the existing general admissions experience
-                    to identify areas where hierarchy, navigation, and
-                    ticket discovery could be improved.
+                    We analyzed the existing general admission experience to understand how event information, filters, ticket options, and the stadium view were currently presented.
                 </p>
 
-                <div class="case-image large">
-                    <img
-                        src="images/maizetix-current-1.png"
-                        alt="Current MaizeTix experience"
-                    >
+
+                <!-- CURRENT EXPERIENCE IMAGES -->
+
+                <div class="current-experience-images">
+
+                    <div class="current-experience-image">
+
+                        <img
+                            src="images/ticketsog1.png"
+                            alt="Current MaizeTix general admission experience"
+                        >
+
+                    </div>
+
+                    <div class="current-experience-image">
+
+                        <img
+                            src="images/ticketsog2.png"
+                            alt="Annotated MaizeTix interface showing areas for improvement"
+                        >
+
+                    </div>
+
                 </div>
 
-                <div class="case-image large">
-                    <img
-                        src="images/maizetix-current-2.png"
-                        alt="MaizeTix interface analysis"
-                    >
-                </div>
 
-            </div>
-
-        </section>
-
-
-        <!-- CURRENT EXPERIENCE FINDINGS -->
-
-        <section class="case-section">
-
-            <div class="section-label">
-                CURRENT EXPERIENCE
-            </div>
-
-            <div class="section-content">
+                <!-- CURRENT EXPERIENCE INSIGHTS -->
 
                 <div class="insight-grid">
 
@@ -181,9 +191,7 @@
                         </h3>
 
                         <p>
-                            Important information and actions compete for
-                            attention, making it difficult for users to
-                            understand where to look first.
+                            Important information and actions have similar visual weight, making the interface harder to scan.
                         </p>
 
                     </div>
@@ -192,13 +200,11 @@
                     <div class="insight-card">
 
                         <h3>
-                            Limited filtering clarity
+                            Filtering clarity
                         </h3>
 
                         <p>
-                            Filtering options are not visually prominent,
-                            making it harder for users to narrow down
-                            available tickets.
+                            Filtering options could be made more noticeable and easier to identify within the interface.
                         </p>
 
                     </div>
@@ -211,9 +217,7 @@
                         </h3>
 
                         <p>
-                            The existing experience does not provide a clear
-                            visual way to explore ticket availability by
-                            stadium section.
+                            The existing stadium view provided an opportunity to make section information more visual and easier to explore.
                         </p>
 
                     </div>
@@ -226,9 +230,7 @@
                         </h3>
 
                         <p>
-                            Some icons lack clarity and consistency,
-                            making certain actions less immediately
-                            understandable.
+                            Updating iconography could create clearer visual cues for different actions.
                         </p>
 
                     </div>
@@ -251,101 +253,36 @@
             <div class="section-content">
 
                 <h2>
-                    Learning from existing ticketing platforms.
+                    Understanding the ticketing landscape.
                 </h2>
 
                 <p>
-                    To better understand expectations for digital ticketing,
-                    we analyzed leading platforms including StubHub,
-                    Ticketmaster, Vivid Seats, and TickPick.
+                    We conducted a competitive analysis of established ticketing platforms including Ticketmaster, StubHub, Vivid Seats, and TickPick.
                 </p>
 
                 <p>
-                    We compared navigation, information hierarchy,
-                    filtering, ticket discovery, and checkout interactions
-                    to identify opportunities for improving the MaizeTix
-                    experience.
+                    We compared navigation, information hierarchy, filtering, ticket discovery, seating, and purchasing interactions to identify common patterns and opportunities that could inform our own design decisions for MaizeTix.
                 </p>
 
-                <div class="competitive-grid">
 
-                    <div class="case-image">
+                <!-- SWOT ANALYSIS -->
+
+                <div class="subsection">
+
+                    <div class="section-label">
+                        SWOT ANALYSIS
+                    </div>
+
+                    <p>
+                        We synthesized our competitive research into a SWOT analysis to identify strengths, weaknesses, opportunities, and threats within the ticketing experience.
+                    </p>
+
+                    <div class="research-image swot-image ">
+
                         <img
-                            src="images/stubhub.png"
-                            alt="StubHub competitive analysis"
+                            src="images/swot.png"
+                            alt="MaizeTix SWOT analysis"
                         >
-                    </div>
-
-                    <div class="case-image">
-                        <img
-                            src="images/ticketmaster.png"
-                            alt="Ticketmaster competitive analysis"
-                        >
-                    </div>
-
-                    <div class="case-image">
-                        <img
-                            src="images/vividseats.png"
-                            alt="Vivid Seats competitive analysis"
-                        >
-                    </div>
-
-                    <div class="case-image">
-                        <img
-                            src="images/tickpick.png"
-                            alt="TickPick competitive analysis"
-                        >
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SWOT -->
-
-        <section class="case-section">
-
-            <div class="section-label">
-                SWOT ANALYSIS
-            </div>
-
-            <div class="section-content">
-
-                <div class="swot-grid">
-
-                    <div class="swot-card">
-                        <h3>Strengths</h3>
-                        <p>
-                            Established ticket marketplace and direct
-                            connection to U-M students.
-                        </p>
-                    </div>
-
-                    <div class="swot-card">
-                        <h3>Weaknesses</h3>
-                        <p>
-                            Information hierarchy and ticket discovery
-                            could be clearer.
-                        </p>
-                    </div>
-
-                    <div class="swot-card">
-                        <h3>Opportunities</h3>
-                        <p>
-                            Improve filtering, stadium navigation,
-                            and purchasing flow.
-                        </p>
-                    </div>
-
-                    <div class="swot-card">
-                        <h3>Threats</h3>
-                        <p>
-                            Students can compare MaizeTix with other
-                            ticket marketplaces.
-                        </p>
                     </div>
 
                 </div>
@@ -370,47 +307,12 @@
                 </h2>
 
                 <p>
-                    We focused on three priorities: clarity, accessibility,
-                    and streamlined navigation. We began by defining key
-                    user goals and restructuring the experience around
-                    how users naturally search for tickets.
+                    We focused on clarity, accessibility, and streamlined navigation. We began by defining key user goals and restructuring the experience around how users move through the ticketing process.
                 </p>
 
                 <p>
-                    We then created wireframes and low-fidelity prototypes
-                    to explore different layouts and information hierarchies
-                    before refining the experience into higher-fidelity
-                    designs based on feedback.
+                    We then created wireframes and low-fidelity prototypes to explore different layouts and information hierarchies before refining the experience into higher-fidelity designs.
                 </p>
-
-                <div class="process-flow">
-
-                    <div>
-                        <span>01</span>
-                        <p>Research</p>
-                    </div>
-
-                    <div>
-                        <span>02</span>
-                        <p>Wireframes</p>
-                    </div>
-
-                    <div>
-                        <span>03</span>
-                        <p>User Flow</p>
-                    </div>
-
-                    <div>
-                        <span>04</span>
-                        <p>UI Design</p>
-                    </div>
-
-                    <div>
-                        <span>05</span>
-                        <p>Prototype</p>
-                    </div>
-
-                </div>
 
             </div>
 
@@ -432,16 +334,18 @@
                 </h2>
 
                 <p>
-                    We created a reusable set of components to keep the
-                    redesigned experience consistent across different
-                    sports and ticketing flows.
+                    We created reusable components to keep the redesigned experience consistent across different sports and ticketing flows.
                 </p>
 
-                <div class="case-image large">
+                <!-- SMALLER COMPONENT IMAGE -->
+
+                <div class="maizetix-small-image components-image">
+
                     <img
-                        src="images/maizetix-components.png"
+                        src="images/components.png"
                         alt="MaizeTix design components"
                     >
+
                 </div>
 
             </div>
@@ -449,7 +353,7 @@
         </section>
 
 
-        <!-- REDESIGN -->
+        <!-- GENERAL ADMISSION REDESIGN -->
 
         <section class="case-section">
 
@@ -460,122 +364,71 @@
             <div class="section-content">
 
                 <h2>
-                    A step-by-step path from game selection to ticket availability.
+                    A clearer path from game selection to ticket availability.
                 </h2>
 
                 <p>
-                    We restructured the experience into a step-by-step flow
-                    that progressively introduces information instead of
-                    presenting users with every option at once.
+                    We restructured the experience into a step-by-step flow that progressively introduces information instead of presenting users with every option at once.
                 </p>
 
-                <!-- USER FLOW -->
+                <!-- SMALLER USER FLOW IMAGE -->
 
-                <div class="user-flow">
+                <div class="maizetix-small-image workflow-image">
 
-                    <div>Browse games</div>
-                    <span>→</span>
-                    <div>Select tickets</div>
-                    <span>→</span>
-                    <div>Choose quantity</div>
-                    <span>→</span>
-                    <div>Explore availability</div>
-                    <span>→</span>
-                    <div>Purchase</div>
+                    <img
+                        src="images/workflow.png"
+                        alt="MaizeTix redesigned user flow"
+                    >
 
                 </div>
 
+            </div>
 
-                <!-- FRAME 1 -->
+        </section>
 
-                <div class="design-frame">
+         <section class="case-section">
 
-                    <div class="design-frame-text">
+            <div class="section-label">
+                07 / The New User Flow
+            </div>
 
-                        <span>FRAME 01</span>
+            <div class="section-content">
 
-                        <h3>
-                            Browse matches
-                        </h3>
+                <h2>
+                     The redesigned experience  
+                </h2>
 
-                        <p>
-                            Users begin by browsing available matches
-                            throughout the season. Each event provides
-                            the key information needed to decide whether
-                            to continue.
-                        </p>
+        <section class="case-section design-frame-section frame-01">
 
-                    </div>
+            <div class="section-label">
+                FRAME 01
+            </div>
 
-                    <div class="design-frame-image">
-                        <img
-                            src="images/maizetix-frame1.png"
-                            alt="MaizeTix match selection"
-                        >
-                    </div>
+            <div class="design-frame">
 
-                </div>
+                <div class="design-frame-text">
 
+                    <h2>
+                        Browse matches
+                    </h2>
 
-                <!-- FRAME 2 -->
-
-                <div class="design-frame">
-
-                    <div class="design-frame-text">
-
-                        <span>FRAME 02</span>
-
-                        <h3>
-                            Select ticket quantity
-                        </h3>
-
-                        <p>
-                            After selecting a match, users choose how
-                            many tickets they need. This allows the
-                            experience to prioritize ticket options
-                            based on their needs.
-                        </p>
-
-                    </div>
-
-                    <div class="design-frame-image">
-                        <img
-                            src="images/maizetix-frame2.png"
-                            alt="MaizeTix ticket quantity selection"
-                        >
-                    </div>
+                    <p>
+                        Users begin by browsing available matches throughout the season. Each event provides key information to help users decide which game they want to explore.
+                    </p>
 
                 </div>
 
+                <div class="design-frame-image frame-01-images">
 
-                <!-- FRAME 3 -->
+                    <img
+                        src="images/maizetixframe1.png"
+                        alt="MaizeTix match selection screen"
+                    >
 
-                <div class="design-frame">
-
-                    <div class="design-frame-text">
-
-                        <span>FRAME 03</span>
-
-                        <h3>
-                            Explore ticket availability
-                        </h3>
-
-                        <p>
-                            Users are presented with available tickets,
-                            with recommended options surfaced first
-                            for easier comparison. A visual stadium map
-                            allows users to explore individual sections
-                            and see available tickets.
-                        </p>
-
-                    </div>
-
-                    <div class="design-frame-image">
-                        <img
-                            src="images/maizetix-frame3.png"
-                            alt="MaizeTix ticket availability"
-                        >
-                    </div>
+                    <img
+                        src="images/maizetixframe2.png"
+                        alt="MaizeTix match selection screen"
+                    >
 
                 </div>
 
@@ -584,12 +437,132 @@
         </section>
 
 
-        <!-- FINAL DESIGNS -->
+        <!-- FRAME 02 -->
 
-        <section class="case-section final-designs">
+        <section class="case-section design-frame-section frame-02">
 
             <div class="section-label">
-                07 / FINAL EXPERIENCE
+                FRAME 02
+            </div>
+
+            <div class="design-frame">
+
+                <div class="design-frame-text">
+
+                    <h2>
+                        Select ticket quantity
+                    </h2>
+
+                    <p>
+                        After selecting a match, users choose how many tickets they would like to purchase before moving forward to the available ticket options.
+                    </p>
+
+                </div>
+
+                <div class="design-frame-image">
+
+                    <img
+                        src="images/maizetixframe3.png"
+                        alt="MaizeTix ticket quantity selection screen"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FRAME 03 -->
+
+        <section class="case-section design-frame-section frame-03">
+
+            <div class="section-label">
+                FRAME 03
+            </div>
+
+            <div class="design-frame">
+
+                <div class="design-frame-text">
+
+                    <h2>
+                        Explore ticket availability
+                    </h2>
+
+                    <p>
+                        Users are presented with available tickets, with recommended options surfaced first for easier comparison. A visual stadium map provides another way to explore available sections.
+                    </p>
+
+                </div>
+
+                <div class="design-frame-image frame-03-images">
+
+                    <img
+                        src="images/maizetixframe4.png"
+                        alt="MaizeTix ticket availability screen with stadium view"
+                    >
+
+                    <img
+                        src="images/maizetixframe5.png"
+                        alt="MaizeTix ticket availability screen with stadium view"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="insight-grid">
+
+                <div class="insight-card">
+
+                    <h3>
+                        Recommended tickets
+                    </h3>
+
+                    <p>
+                        Surfaces available ticket options to make comparison easier.
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <h3>
+                        Stadium view
+                    </h3>
+
+                    <p>
+                        Provides a visual way to explore different areas of the stadium.
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <h3>
+                        Section selection
+                    </h3>
+
+                    <p>
+                        Allows users to explore available ticket options by section.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL EXPERIENCE -->
+
+        <section class="case-section">
+
+            <div class="section-label">
+                08 / FINAL EXPERIENCE
             </div>
 
             <div class="section-content">
@@ -599,37 +572,66 @@
                 </h2>
 
                 <p>
-                    The redesigned interaction model was designed to
-                    work across different athletic events, creating a
-                    consistent experience while adapting to the needs
-                    of each sport.
+                    The redesigned interaction model was designed to work across different athletic events, creating consistent patterns while adapting the experience to each sport.
                 </p>
 
 
-                <div class="final-design">
+                <!-- FOOTBALL -->
+
+                <div class="final-experience-card">
 
                     <h3>
                         Football
                     </h3>
 
-                    <img
-                        src="images/maizetix-football.png"
-                        alt="MaizeTix football ticket flow"
-                    >
+                    <div class="final-screens">
+
+                        <img
+                            src="images/football1.png"
+                            alt="MaizeTix football screen 1"
+                        >
+
+                        <img
+                            src="images/football2.png"
+                            alt="MaizeTix football screen 2"
+                        >
+
+                        <img
+                            src="images/football3.png"
+                            alt="MaizeTix football screen 3"
+                        >
+
+                    </div>
 
                 </div>
 
 
-                <div class="final-design">
+                <!-- BASKETBALL -->
+
+                <div class="final-experience-card">
 
                     <h3>
                         Basketball
                     </h3>
 
-                    <img
-                        src="images/maizetix-basketball.png"
-                        alt="MaizeTix basketball ticket flow"
-                    >
+                    <div class="final-screens">
+
+                        <img
+                            src="images/basketbal1.png"
+                            alt="MaizeTix basketball screen 1"
+                        >
+
+                        <img
+                            src="images/basketball2.png"
+                            alt="MaizeTix basketball screen 2"
+                        >
+
+                        <img
+                            src="images/basketball3.png"
+                            alt="MaizeTix basketball screen 3"
+                        >
+
+                    </div>
 
                 </div>
 
@@ -643,33 +645,28 @@
         <section class="case-section reflection">
 
             <div class="section-label">
-                08 / REFLECTION
+                09 /NEXT STEPS
             </div>
 
             <div class="section-content">
 
                 <h2>
-                    Designing a transactional experience with less friction.
+                   What comes next
                 </h2>
 
-                <p>
-                    This project taught me how to design a transactional
-                    experience where users need to make several decisions
-                    before completing a purchase. Rather than overwhelming
-                    users with every ticket option at once, we focused on
-                    progressively revealing information and giving users
-                    clearer control over their choices.
-                </p>
+               
+                
 
-                <h3>
-                    Next steps
-                </h3>
+                    <ul>
+    <li>Optimize the experience for mobile integration.</li>
+    <br>
+    <li>Conduct usability testing with U-M students.</li>
+    <br>
+    <li>Explore additional accessibility improvements.</li>
+    <br>
+    <li>Continue refining ticket comparison and selection.</li>
+</ul>
 
-                <ul>
-                    <li>Optimize the experience for mobile integration.</li>
-                    <li>Conduct usability testing with U-M students.</li>
-                    <li>Explore additional accessibility improvements.</li>
-                    <li>Continue refining ticket comparison and selection.</li>
                 </ul>
 
             </div>
@@ -680,7 +677,16 @@
     </main>
 
 
-    <script src="js/script.js"></script>
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <p>
+            © 2026 Tasnimah Uddin
+        </p>
+
+    </footer>
+
 
 </body>
 
